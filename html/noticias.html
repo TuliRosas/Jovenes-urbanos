@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/anim.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <title>Noticias</title>
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar fixed-top navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../html/bienvenida.html">[Jóvenes Urbanos]</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link nav-button" href="../html/noticias.html" role="button" aria-expanded="false">
+              Noticias
+            </a>
+
+          <li class="nav-item">
+            <a class="nav-link nav-button" href="../html/actividades.html" role="button" aria-expanded="false">
+              Actividades
+            </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Educación
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/esi.html">Educación sexual integral</a></li>
+              <li><a class="dropdown-item" href="../html/cde.html">Centros de estudiantes</a></li>
+            </ul>
+          </li>
+          </li>
+         
+
+          <li class="nav-item ">
+            <a class="nav-link nav-button" href="../html/informacion.html" role="button" aria-expanded="false">
+              Nosotros
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Categorias-->
+  <div class="container">
+    <h1 class="loading-tit text_shadows">NOTICIAS</h1>
+    <header class="not-header ">
+
+
+      <div class="grid-container categorias text-center">
+        <div class="row">
+          <div class="col cat" onclick="buscar('Tecnología')">Tecnología</div>
+          <div class="col cat" onclick="buscar('programación')">Programación</div>
+          <div class="col cat" onclick="buscar('deportes')">Deportes</div>
+          <div class="col cat" onclick="buscar('economía')">Economía</div>
+          <div class="col cat" onclick="buscar('educación')">Educación</div>
+        </div>
+      </div>
+
+
+
+    </header>
+
+    <!--Noticias-->
+
+
+    <div class="container-noticias">
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="../js/app.js"></script>
+
+</body>
+<footer>
+  <div class="grid-container text-center">
+    <div class="footer row">
+      <div class="col">
+        <p>[Jóvenes Urbanos]</p>
+        <br>
+        <p>jovenesurbanos9@gmail.com</p>
+        <br>
+        <a href="https://www.instagram.com/jovenesurbanos1/"><img src="../image/logoi.png" width="40px" height="40px"
+style="border-radius: 50%;"></a><a href="https://twitter.com/JvenesUrbanos1"><img src="../image/logot.png" width="40px"
+            height="40px"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

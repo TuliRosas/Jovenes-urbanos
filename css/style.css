@@ -1,0 +1,324 @@
+/*Fuentes*/
+
+@font-face {
+  font-family: Kalmansk;
+  src: url(../fonts/Kalmansk-Regular.otf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+
+
+/*General*/
+
+body {
+  overflow-y: auto;
+  margin-top: 8%;
+  background-color: rgb(211, 209, 209);
+  overflow-y: auto;
+}
+
+.grid-container {
+  background-color: rgb(228, 228, 228);
+}
+
+.navbar {
+  background-color: black;
+  --bs-navbar-toggler-icon-bg: url("../image/clipart365828.png");
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.dropdown-toggle,
+.nav-button {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+}
+
+.navbar-brand,
+.dropdown-toggle,
+.nav-button {
+  color: aliceblue;
+ 
+}
+
+.navbar-brand:hover,
+.dropdown-toggle:hover,
+.nav-button:hover {
+  color: rgb(171, 231, 59);
+}
+
+.navbar-brand:focus,
+.dropdown-toggle:focus,
+.nav-button:focus {
+  color: rgb(171, 231, 59);
+}
+
+.dropdown-item:hover {
+  background: rgb(171, 231, 59);
+  
+}
+
+.dropdown-item:focus {
+  background: rgb(171, 231, 59);
+
+}
+
+.footer {
+  background-color: black;
+  color: aliceblue;
+  margin-bottom: 0px;
+  padding: 10%;
+  padding-bottom: 5%;
+}
+
+/*Index*/
+
+.loading {
+  margin-top: 0px;
+  background-color: black;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loading-tit {
+  font-family: Kalmansk;
+  color: aliceblue;
+  -webkit-text-stroke: black 3px;
+}
+
+/*Bienvenida*/
+
+.welcome {
+  background: rgb(255, 255, 255);
+  overflow-x: hidden;
+  margin-top: 8%;
+}
+
+.welcome-tit {
+  padding: 10%;
+  padding-bottom: 5%;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bolder;
+}
+
+.welcome-text {
+  padding: 5%;
+  padding-top: 0px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.welcome-video {
+  width: 100%;
+}
+
+/*Noticias*/
+
+.categorias {
+  background-color: rgb(211, 209, 209);
+  font-family: 'Bebas Neue', cursive;
+}
+
+.cat {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cat:hover {
+  color: rgb(171, 231, 59);
+}
+
+input {
+  padding: 5px 10px;
+  border: none;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+}
+
+.container-noticias {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  padding-bottom: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container-noticias .item {
+  background-color: #eee;
+  max-width: 360px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container-noticias .item:hover {
+  box-shadow: 0 0 10px 5px #ccc;
+}
+
+.container-noticias .item:hover h2 {
+  text-decoration: underline;
+}
+
+.container-noticias .item .info_item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.container-noticias .item img {
+  width: 100%;
+}
+
+.container-noticias #btnSiguiente {
+  cursor: pointer;
+}
+
+.container-noticias #btnSiguiente:hover {
+  color: rgb(171, 231, 59);
+}
+
+/*Información*/
+
+.informacion {
+  background-color: rgb(211, 209, 209);
+}
+
+.info-grid {
+  padding: 5%;
+  padding-bottom: 0%;
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(255, 255, 255);
+  border-radius: 30px;
+  margin: 5%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
+  box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bold-p {
+  font-weight: bold;
+}
+
+/*Actividades*/
+
+.tipo-act {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+.card {
+  box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.2);
+  margin: 5%;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 90%;
+}
+
+#card-grid {
+  background-color: rgb(211, 209, 209);
+}
+
+.card-img {
+  height: 200px;
+}
+
+.card-text{
+  padding: 4%;
+}
+
+/*Esi*/
+
+.accordion {
+  margin: 5%;
+  box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-button1 {
+  background-color: rgba(255, 0, 0, 0.479);
+}
+
+.accordion-button2 {
+  background-color: rgba(255, 145, 0, 0.466);
+}
+
+.accordion-button3 {
+  background-color: rgba(255, 251, 0, 0.486);
+}
+
+.accordion-button4 {
+  background-color: rgba(0, 255, 0, 0.527);
+}
+
+.accordion-button5 {
+  background-color: rgba(0, 225, 255, 0.466);
+}
+
+.accordion-button6 {
+  background-color: rgba(255, 0, 242, 0.473);
+}
+
+.accordion-header,
+.accordion-body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.accordion-body {
+  font-size: smaller;
+}
+
+/*Entre amigues*/
+
+.reflex{
+    background-color: rgb(211, 209, 209);
+}
+
+.foto{
+float: right;
+}
+
+/*cde*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+  max-width: 600px;
+  margin-block: 2rem;
+  margin-inline: auto;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.li {
+  display: grid;
+  place-items: center;
+  color: white;
+  
+  aspect-ratio: 2/1;
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+
